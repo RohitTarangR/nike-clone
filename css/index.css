@@ -91,6 +91,7 @@ body {
 
 .nike-nav-menu nav a{
     margin: 0px 5px;
+    transition: all 0.4s ease;
 }
 
 .nike-nav-menu nav a:hover{
@@ -136,6 +137,10 @@ nav a:hover{
 
 /* Sliders css */
 
+/* .slider{
+    z-index: -1;
+    background-color: var(--third);
+} */
 
 .slider-carousal{
     background-color: red;
@@ -229,11 +234,11 @@ nav a:hover{
 
 .nike-nav-menu-2 nav a{
     margin: 0px 5px;
+    transition: all 0.4s  ease; 
 }
 
 .nike-nav-menu-2 nav a:hover{
-    color: var(--black);
-    text-decoration: underline;
+    color: #75767b;
 }
 
 
@@ -468,6 +473,13 @@ nav a:hover{
     margin-top: 10px;
 }
 
+.jordan-shoe-com a:hover,
+.jordan-clothing-com a:hover,
+.jordan-gear-com a:hover,
+.jordan-featured-com a:hover{
+    color: rgb(74, 72, 72);
+}
+
 
 
 .heading-compo{
@@ -478,8 +490,188 @@ nav a:hover{
     margin: 15px 0;
 }
 
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
 
+
+.footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 30px 30px 20px 30px;
+  color: white;
+  background-color: black;
+}
+
+.footer > * {
+  flex:  1 100%;
+}
+
+.footer__addr {
+  margin-right: 1.25em;
+  margin-bottom: 2em;
+}
+
+.footer__logo {
+  font-family: 'Pacifico', cursive;
+  font-weight: 400;
+  text-transform: lowercase;
+  font-size: 1.5rem;
+}
+
+.footer__addr h2 {
+  margin-top: 1.3em;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.nav__title {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.footer address {
+  margin: 10px 5px;
+  font-style: normal;
+  color: var(--third);
+}
+
+.footer__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  max-width: max-content;
+  border-radius: 100px;
+  color: black;
+  background-color: white;
+  line-height: 0;
+  margin: 1.6em 0;
+  font-size: 15px;
+  padding: 0 1.3em;
+  transition: all 0.3s ease;
+}
+
+.footer__btn:hover{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+}
+
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer li {
+  line-height: 32px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.footer__nav > * {
+  flex: 1 50%;
+  margin-right: 1.25em;
+}
+
+.footer__logo img{
+    filter: invert(100%);
+}
+
+.nav__ul a {
+  font-size: 15px;
+  color: #999;
+  transition: all 0.3s ease;
+}
+
+.nav__ul a:hover{
+    color: #dfdfef;
+}
+
+.nav__ul--extra {
+  column-count: 2;
+  column-gap: 1.25em;
+}
+
+.legal {
+  display: flex;
+  flex-wrap: wrap;
+  color: #999;
+}
+  
+.legal__links {
+  display: flex;
+  align-items: center;
+}
+
+.heart {
+  color: #2f2f2f;
+}
+
+
+
+@media screen and (min-width: 24.375em) {
+  .legal .legal__links {
+    margin-left: auto;
+  }
+}
+
+@media screen and (min-width: 40.375em) {
+  .footer__nav > * {
+    flex: 1;
+  }
+  
+  .nav__item--extra {
+    flex-grow: 2;
+  }
+  
+  .footer__addr {
+    flex: 1 0px;
+  }
+  
+  .footer__nav {
+    flex: 2 0px;
+  }
+}
+
+/* .footer{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 100px;
+}
+
+.footer-left{
+    text-align: center; 
+}
+
+.footer .social{
+    color: black;
+    background-color: white;
+    margin-left: 891px;
+}
+
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.navigate1{
+    display: flex;
+    flex-direction: column;
+    color: white;
+} */
 
 
 
